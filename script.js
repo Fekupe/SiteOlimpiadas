@@ -2,42 +2,28 @@
 // alert(2023 - entrada);
 // alert(typeof entrada);
 
-
-let body = document.querySelector("body");
-//let nav = document.querySelector("nav");
-
-
-//function toDarkSideNav() {
-  //nav.classList.add("dark-nav");
-  //nav.classList.remove("light-nav");
+//let body = document.querySelector("body"); aqui éo incio
+//function toDarkSide() {
+  //body.classList.add("dark");
+  //body.classList.remove("light");
 //}
 
-//function toJediSideNav() {
-  //nav.classList.add("light-nav");
-  //nav.classList.remove("dark-nav");
+//function toJediSide() {
+  //body.classList.add("light");
+  //body.classList.remove("dark");
 //}
 
-function toDarkSide() {
-  body.classList.add("dark");
-  body.classList.remove("light");
-}
-
-function toJediSide() {
-  body.classList.add("light");
-  body.classList.remove("dark");
-}
-
-function toJediSide() {
-  console.log("OK");
-
-  body.classList.add("light");
-  body.classList.remove("dark");
-}
-
-//function toJediSideNav() {
+//function toJediSide() {
   //console.log("OK");
-  //nav.classList.add("light-nav");
-  //nav.classList.remove("dark-nav");
-//}
+
+  //body.classList.add("light");
+  //body.classList.remove("dark");
+//} aqui é o final 
 
 // só um teste do toggle pra ver se funciona 
+ 
+const btn = document.getElementById("switch");
+  
+btn.addEventListener("change", (e) => {
+  document.body.classList.toggle("dark", e.target.checked);
+})

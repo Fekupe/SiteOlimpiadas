@@ -140,7 +140,7 @@ label {
   text-indent: -9999px;
   width: 50px;
   height: 25px;
-  background: grey;
+  background: #301E67;
   display: block;
   border-radius: 25px;
   position: relative;
@@ -159,7 +159,7 @@ label:after {
 }
 
 input:checked + label {
-  background: #bada55;
+  background: #FDFF00;
 }
 
 input:checked + label:after {
